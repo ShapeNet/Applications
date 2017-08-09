@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.dirname(BASE_DIR)))
 from global_variables import *
 
 img_root_dir = g_fixedview_image_folder
-modelIds = [x.rstrip().split(' ')[0] for x in open(g_shape_list_file,'r')]
+modelIds = [x.rstrip().split(' ')[1] for x in open(g_shape_list_file,'r')]
 elevatio_degs = g_fixedview_elevation_degs
 azimuth_degs = g_fixedview_azimuth_degs
 
